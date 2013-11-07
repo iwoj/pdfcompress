@@ -1,4 +1,8 @@
 #!/bin/bash
+# 
+# Requires:
+# sudo apt-get install ghostscript
+#
 
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=temp.pdf "$1"
 mv temp.pdf "$1"
